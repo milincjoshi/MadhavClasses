@@ -29,7 +29,15 @@ namespace MadhavClasses
             catch (Exception ex)
             {}
         }
-
+        public static void disconnect()
+        {
+            try
+            {
+                con.Clone();
+            }
+            catch (Exception ex)
+            { }
+        }
         public static DataTable get_images() {
             DataTable dt = new DataTable();
 

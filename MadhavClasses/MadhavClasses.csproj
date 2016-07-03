@@ -97,6 +97,7 @@
     <Content Include="Admin\VideoGallery.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Error404.aspx" />
+    <Content Include="Images\person-icon.png" />
     <Content Include="index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -107,6 +108,10 @@
     <Content Include="Professor\ProfessorHome.aspx" />
     <Content Include="Professor\ProfessorLogin.aspx" />
     <Content Include="Professor\ProfessorMaster.Master" />
+    <Content Include="Student\StudentEditProfile.aspx" />
+    <Content Include="Student\StudentHome.aspx" />
+    <Content Include="Student\StudentLogin.aspx" />
+    <Content Include="Student\StudentMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,8 +130,11 @@
     <Content Include="Images\MahendraJoshi.jpg" />
     <Content Include="Images\openBook.png" />
     <Content Include="Location.aspx" />
+    <Content Include="Professor\ProfessorProfile.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Student\StudentProfile.aspx" />
+    <Content Include="Student\StudentRegister.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -250,12 +258,61 @@
     <Compile Include="Professor\ProfessorMaster.Master.designer.cs">
       <DependentUpon>ProfessorMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Professor\ProfessorProfile.aspx.cs">
+      <DependentUpon>ProfessorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfessorProfile.aspx.designer.cs">
+      <DependentUpon>ProfessorProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\StudentEditProfile.aspx.cs">
+      <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentEditProfile.aspx.designer.cs">
+      <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentLogin.aspx.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentLogin.aspx.designer.cs">
+      <DependentUpon>StudentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentMaster.Master.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentMaster.Master.designer.cs">
+      <DependentUpon>StudentMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentProfile.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentProfile.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentRegister.aspx.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentRegister.aspx.designer.cs">
+      <DependentUpon>StudentRegister.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="fonts\font-awesome-4.6.3\" />
     <Folder Include="fonts\roboto\" />
     <Folder Include="Image_Gallery\" />
-    <Folder Include="Student\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
