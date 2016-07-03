@@ -11,7 +11,18 @@ namespace MadhavClasses.Student
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.LoadComplete += StudentHome_LoadComplete;
+        }
 
+        private void StudentHome_LoadComplete(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                if (Session["student_email"] == null)
+                {
+                    Response.Redirect("StudentLogin.aspx");
+                }
+            }
         }
     }
 }

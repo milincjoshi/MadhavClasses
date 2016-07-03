@@ -20,7 +20,7 @@
 
     <!--MainCSS Link-->
     <link href="../CSS/mainCSS.css" rel="stylesheet" /></head>
-<body>
+<body class="container-fluid">
     <div class="page-header">
         <h3>Student Login</h3>
     </div>
@@ -28,13 +28,17 @@
     <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
 
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">Login</div>
             <div class="panel-body">
                 <asp:TextBox ID="student_email" runat="server" TextMode="Email" CssClass="form-control marginTop2" placeholder="Email" required/>
                 <asp:TextBox ID="student_password" runat="server" TextMode="Password" CssClass="form-control marginTop2" placeholder="Password" required/>
                 <asp:Button ID="register" runat="server" CssClass="btn btn-default marginTop2" Text="Login" OnClick="register_Click" />
                 <asp:Label ID="invalid" runat="server" Text="Invalid Email/Password" CssClass="label label-danger" Visible="false" />
+                <div class="col-lg-12">
+                    <a class="pull-right" href="StudentRegister.aspx">Register</a>
+                </div>
+
             </div>
         </div>
         </div>

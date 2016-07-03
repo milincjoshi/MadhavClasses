@@ -7,8 +7,8 @@
     </div>
     <asp:DataList id="image_list" runat="server" RepeatDirection="Horizontal" RepeatColumns="6"> 
         <ItemTemplate> 
-                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"> 
-                     <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive" src="<%# Eval("image_path") %>"/> 
+                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                     <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive img-rounded" src="<%# Eval("image_path") %>"/> 
                  </div> 
                  <!--
                      span class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "><%# Eval("image_date") %>
@@ -34,10 +34,14 @@
     $(document).ready(function () {
       $('img').on('click', function () {
         var src = $(this).attr('src');
-        var img = '<img src="' + src + '" class="img-responsive"/>';
+        var img = '<img height="50%" width="50%" src="' + src + '" class="img-responsive material-shadow--4dp"/>';
         $('#myModal').modal();
         $('#myModal').on('shown.bs.modal', function () {
             $('#myModal .modal-body').html(img);
+            $('#myModal .modal-body').addClass("center_element");
+            $('#myModal .modal-body').addClass("colorPitchBlackBG");
+            $('#myModal .modal-body').addClass("material-shadow--4dp");
+
         });
         $('#myModal').on('hidden.bs.modal', function () {
             $('#myModal .modal-body').html('');

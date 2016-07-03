@@ -22,6 +22,15 @@ namespace MadhavClasses.Student {
         protected global::System.Web.UI.WebControls.Image student_profilepic;
         
         /// <summary>
+        /// profile_pic control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload profile_pic;
+        
+        /// <summary>
         /// student_firstname control.
         /// </summary>
         /// <remarks>

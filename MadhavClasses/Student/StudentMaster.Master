@@ -27,6 +27,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body class="container-fluid">
+    <form id="form1" runat="server">
+
       <!--Navbar-->
       <nav class="navbar navbar-inverse ">
       <div class="container-fluid">
@@ -44,16 +46,15 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="">Home</a></li>
+        <li><a href="StudentHome.aspx">Home</a></li>
         <li><a href="StudentProfile.aspx">Profile</a></li>
         <li><a href="StudentEditProfile.aspx">Edit Profile</a></li>
-        <li><a href="">Logout</a></li>
+        <li><asp:LinkButton ID="logout" runat="server" OnClick="logout_Click">Logout</asp:LinkButton></li>
       </ul>
       </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
       </nav>
     <!--End Navbar-->
-    <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         

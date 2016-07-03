@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentRegister.aspx.cs" Inherits="MadhavClasses.Student.StudentRegister" %>
+﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentRegister.aspx.cs" Inherits="MadhavClasses.Student.StudentRegister" %>
 
 <!DOCTYPE html>
 
@@ -38,6 +38,9 @@
                 <asp:TextBox ID="student_email" runat="server" TextMode="Email" CssClass="form-control marginTop2" placeholder="Email" required/>
                 <asp:TextBox ID="student_password" runat="server" TextMode="Password" CssClass="form-control marginTop2" placeholder="Password" required/>
                 <asp:Button ID="register" runat="server" CssClass="btn btn-default marginTop2" Text="Register" OnClick="register_Click" />
+                <div class="col-lg-12">
+                    <a class="pull-right" href="StudentLogin.aspx">Login</a>
+                </div>
             </div>
         </div>
         </div>

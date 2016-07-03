@@ -97,7 +97,8 @@
     <Content Include="Admin\VideoGallery.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Error404.aspx" />
-    <Content Include="Images\person-icon.png" />
+    <Content Include="Images\giphy.gif" />
+    <Content Include="profile_pics\person-icon.png" />
     <Content Include="index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

@@ -13,5 +13,11 @@ namespace MadhavClasses.Student
         {
 
         }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("../index.aspx");
+        }
     }
 }

@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
 		<div class="col-lg-offset-1 col-lg-3 temp_border">
-            <asp:Image CssClass="img-responsive img-rounded col-lg-10 temp_border" ID="student_profilepic" runat="server" ImageUrl="~/Images/person-icon.png" />
+            <asp:Image CssClass="img-responsive  round_border" Height="200" Width="200" ID="student_profilepic" runat="server" ImageUrl="~/Images/person-icon.png" />
 		</div>
 		<div class="col-lg-8 fontSize2em">
             <!--First and last name-->

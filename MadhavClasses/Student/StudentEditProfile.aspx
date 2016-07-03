@@ -4,8 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
 		<div class="col-lg-offset-1 col-lg-3 temp_border">
-            <asp:Image CssClass="img-responsive img-rounded col-lg-10 temp_border" ID="student_profilepic" runat="server" ImageUrl="~/Images/person-icon.png" />
-		</div>
+            <asp:Image CssClass="img-responsive round_border" Height="200" Width="200" ID="student_profilepic" runat="server" ImageUrl="~/Images/person-icon.png" />
+		    <asp:FileUpload ID="profile_pic" runat="server" />
+        </div>
 		<div class="col-lg-6  fontSize2em">
             <!--First and last name-->
 			<div class="row margin5">
@@ -88,7 +89,7 @@
 		    <!--save-->
 			<div class="row margin2">
 				<div class="col-lg-11 col-lg-offset-1 text-center center-block">
-                    <asp:LinkButton ID="save" runat="server" Text="<i class='fa fa-floppy-o' aria-hidden='true'></i> Save" CssClass="btn btn-default "/>
+                    <asp:LinkButton OnClick="save_Click" ID="save" runat="server" Text="<i class='fa fa-floppy-o' aria-hidden='true'></i> Save" CssClass="btn btn-default "/>
 				</div>
 			</div>
             <!--End save-->

@@ -26,6 +26,7 @@ namespace MadhavClasses.Student
             MadhavClass.disconnect();
             if (dt.Rows.Count != 0)
             {
+                Session["student_email"] = email;
                 Response.Redirect("StudentHome.aspx");
             }
             else {
