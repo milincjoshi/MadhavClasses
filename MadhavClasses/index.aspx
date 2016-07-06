@@ -45,14 +45,11 @@
             <div id="welcome_image" class="col-lg-8">
                 <img height="300" width="300" src="Images/namaste.jpg" class="img-circle col-lg-offset-2" />
             </div>
-            <div id="language_text" class="col-lg-4 ">
-                संस्कृतम्
-                <br />
-                हिंदी
-                <br />
-                ગુજરાતી
-                <br />
-                English
+            <div id="language_text" class="col-lg-4 fontSize4em">
+                <span class="col-lg-12">संस्कृतम्</span>
+                <span class="col-lg-12">हिंदी</span>
+                <span class="col-lg-12">ગુજરાતી</span>
+                <span class="col-lg-12">English</span>
             </div>
         </div>
         <div style="margin-top:-2%;" class="col-lg-12 fontSize2em continous_bounce">
