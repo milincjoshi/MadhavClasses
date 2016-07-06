@@ -40,15 +40,15 @@
                   <!--End Facebook-->
               </div><!--End Social Networks-->
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                  <div class="panel panel-primary col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
-                      <div class="panel-heading col-lg-12 col-md-12 col-sm-12 col-xs-12 border">Leave us a Message</div>
-                      <div class="panel-body col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
-                          <asp:TextBox ID="FirstName" runat="server" CssClass="form-control" placeholder="First Name" />
-                          <asp:TextBox ID="LastName" runat="server" CssClass="form-control" placeholder="Last Name" />
-                          <asp:TextBox ID="Email" runat="server" TextMode="Email" CssClass="form-control" placeholder="Email"/>
-                          <asp:TextBox ID="Subject" runat="server" CssClass="form-control" placeholder="Subject" />
-                          <asp:TextBox ID="Message" runat="server" TextMode="MultiLine" CssClass="form-control" placeholder="Message"/>
-                          <asp:Button ID="Send" runat="server" Text="Send" CssClass="btn btn-primary" OnClick="Send_Click" />
+                  <div class="panel panel-primary">
+                      <div class="panel-heading">Leave us a Message</div>
+                      <div class="panel-body">
+                          <asp:TextBox ID="FirstName" runat="server" CssClass="form-control marginTop2" placeholder="First Name" />
+                          <asp:TextBox ID="LastName" runat="server" CssClass="form-control marginTop2" placeholder="Last Name" />
+                          <asp:TextBox ID="Email" runat="server" TextMode="Email" CssClass="form-control marginTop2" placeholder="Email"/>
+                          <asp:TextBox ID="Subject" runat="server" CssClass="form-control marginTop2" placeholder="Subject" />
+                          <asp:TextBox ID="Message" runat="server" TextMode="MultiLine" CssClass="form-control marginTop2" placeholder="Message"/>
+                          <asp:Button ID="Send" runat="server" Text="Send" CssClass="btn btn-primary marginTop2" OnClick="Send_Click" />
                       </div>
                </div>
               </div>

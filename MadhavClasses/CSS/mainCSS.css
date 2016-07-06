@@ -2,11 +2,17 @@
 @font-face { font-family: 'Roboto-Medium'; src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype'); }
 .fontRoboto {font-family: 'Roboto-Medium', sans-serif;}
 
+@font-face { font-family: 'Lato-Light'; src: url('../fonts/Lato2OFL/Lato-Light.ttf') format('truetype'); }
+.fontLatoLight { font-family: 'Lato-Light'; }
+@font-face { font-family: 'Lato-Medium'; src: url('../fonts/Lato2OFL/Lato-Medium.ttf') format('truetype'); }
+.fontLatoMedium { font-family: 'Lato-Medium'; }
+
 body, html { height:100%; min-height:100%;}
+body { min-height:100%; height:100%; font-family: Lato-Medium; }
+
 /*.temp_border {border:solid 1px black;}*/
 .footer { bottom:0px; width:100%; position:relative; }
 datalist ItemTemplate{ height:20px; width:20px; }
-body { min-height:100%; height:100%; font-family: Roboto-Medium; }
 .marginTop33 {margin-top:33%;}
 .round_border { border-radius:15%;}
 .opacity5 {opacity:.5;}

@@ -11,14 +11,22 @@
      
     <br />
 
-      <asp:DataList id="image_list" runat="server" RepeatDirection="Horizontal" RepeatColumns="6"> 
+      <asp:DataList id="image_list" runat="server" RepeatDirection="Horizontal" OnItemCommand="image_list_ItemCommand"> 
         <ItemTemplate> 
                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive"> 
                      <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive" src="<%# Eval("image_path") %>"/> 
-                 </div> 
-                 <span class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "><%# Eval("image_date") %></span> 
-                 <span class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "><%# Eval("image_title") %></span> 
-         </ItemTemplate> 
+                 <span class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                     <%# Eval("image_date") %>
+                 </span> 
+                 <span class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                     <%# Eval("image_title") %>
+                 </span>
+                 <span>
+                     <asp:Button runat="server" CommandName="cmd_original" CommandArgument="image_id" ID="btnOriginal" Text="Original" />
+   
+                 </span>
+              </div> 
+        </ItemTemplate> 
      </asp:DataList> 
 
 

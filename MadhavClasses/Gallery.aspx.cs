@@ -23,8 +23,9 @@ namespace MadhavClasses
         {
             DataTable dt = MadhavClass.get_images();
 
-            image_list.DataSource = dt;
-            image_list.DataBind();
+            String id = dt.Rows[0]["image_path"].ToString();
+            image_listView.DataSource = dt;
+            image_listView.DataBind();
         }
     }
 }

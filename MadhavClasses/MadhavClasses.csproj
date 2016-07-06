@@ -109,6 +109,7 @@
     <Content Include="Professor\ProfessorHome.aspx" />
     <Content Include="Professor\ProfessorLogin.aspx" />
     <Content Include="Professor\ProfessorMaster.Master" />
+    <Content Include="SocialFeeds.aspx" />
     <Content Include="Student\StudentEditProfile.aspx" />
     <Content Include="Student\StudentHome.aspx" />
     <Content Include="Student\StudentLogin.aspx" />
@@ -267,6 +268,13 @@
       <DependentUpon>ProfessorProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SocialFeeds.aspx.cs">
+      <DependentUpon>SocialFeeds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialFeeds.aspx.designer.cs">
+      <DependentUpon>SocialFeeds.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student\StudentEditProfile.aspx.cs">
       <DependentUpon>StudentEditProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -312,6 +320,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="fonts\font-awesome-4.6.3\" />
+    <Folder Include="fonts\Lato2OFL\" />
     <Folder Include="fonts\roboto\" />
     <Folder Include="Image_Gallery\" />
   </ItemGroup>

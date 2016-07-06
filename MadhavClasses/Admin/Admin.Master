@@ -73,7 +73,8 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-    
+
+<!--    
       <footer class="footer img-rounded col-lg-12 margin5 colorBlackBackground colorWhiteFront">
           <p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin2">
               © All Copyrights Reserved.  Developed by <span><a href="https://www.linkedin.com/in/milincjoshi">Milin Joshi</a></span>
@@ -87,5 +88,6 @@
               <a href="/jquery/">Help</a>
           </nav>
       </footer>
+    -->
 </body>
 </html>
