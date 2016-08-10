@@ -26,6 +26,8 @@ namespace MadhavClasses
             String id = dt.Rows[0]["image_path"].ToString();
             image_listView.DataSource = dt;
             image_listView.DataBind();
+            ListView1.DataSource = dt;
+            ListView1.DataBind();
         }
     }
 }

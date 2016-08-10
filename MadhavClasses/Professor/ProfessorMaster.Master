@@ -20,12 +20,43 @@
 
     <!--MainCSS Link-->
     <link href="../CSS/mainCSS.css" rel="stylesheet" />
+     <!--font awesome links-->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body class="container-fluid">
-    
     <form id="form1" runat="server">
+
+     <!--Navbar-->
+      <nav class="navbar navbar-inverse ">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Madhav Classes</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="ProfessorHome.aspx">Home</a></li>
+        <li><a href="ProfessorProfile.aspx">Profile</a></li>
+        <li><a href="ProfessorEditProfile.aspx">Edit Profile</a></li>
+        <li><a href="ProfessorAddDocuments.aspx">Documents</a></li>
+        <li><a href="MakeTest.aspx">Tests</a></li>
+        <li><asp:LinkButton ID="logout" runat="server" OnClick="logout_Click">Logout</asp:LinkButton></li>
+      </ul>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      </nav>
+    <!--End Navbar-->
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         

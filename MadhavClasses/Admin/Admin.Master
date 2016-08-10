@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="MadhavClasses.Admin.Admin" %>
 
 <!DOCTYPE html>
+<!--Ajax Tags-->
+<%@ Register assembly="AjaxControlToolkit"  namespace="AjaxControlToolkit" tagprefix="cc1" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -21,6 +23,10 @@
 
     <!--MainCSS Link-->
     <link href="../CSS/mainCSS.css" rel="stylesheet" />
+     <!--font awesome links-->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css" />
+
+
     <!--Font Link-->
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css' />
     <style>
@@ -57,8 +63,8 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Admin_Home.aspx">Home</a></li>
-        <li><a href="Admin_Images.aspx">Photo Gallery</a></li>
-        <li><a href="Admin_Video.aspx">Video Gallery</a></li>
+        <li><a href="AdminImages.aspx">Photos</a></li>
+        <li><a href="AdminVideos.aspx">Videos</a></li>
         <li><a href="Admin_Logout.aspx">Logout</a></li>
 
       </ul>

@@ -15,7 +15,7 @@ namespace MadhavClasses.Student
 
         }
 
-        protected void register_Click(object sender, EventArgs e)
+        protected void login_Click(object sender, EventArgs e)
         {
             String email = student_email.Text;
             String password = student_password.Text;
@@ -30,7 +30,7 @@ namespace MadhavClasses.Student
                 Response.Redirect("StudentHome.aspx");
             }
             else {
-                invalid.Visible = true;
+                //Invalid login id password
             }
         }
     }

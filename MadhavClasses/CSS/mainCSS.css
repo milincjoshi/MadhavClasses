@@ -7,39 +7,69 @@
 @font-face { font-family: 'Lato-Medium'; src: url('../fonts/Lato2OFL/Lato-Medium.ttf') format('truetype'); }
 .fontLatoMedium { font-family: 'Lato-Medium'; }
 
-body, html { height:100%; min-height:100%;}
-body { min-height:100%; height:100%; font-family: Lato-Medium; }
+@font-face { font-family: 'earthorbiterbold'; src: url('..\fonts\earth_orbiter\earthorbiterbold.ttf') format('truetype');}
+.fontEarthOrbiterBold { font-family: 'earthorbiterbold'; }
 
-/*.temp_border {border:solid 1px black;}*/
+@font-face { font-family: 'Quicksand-Bold'; src: url('..\fonts\quicksand\Quicksand-Bold.otf') format('opentype'); }
+.fontQuickSand { font-family: 'Quicksand-Bold'; }
+
+@font-face { font-family: 'Josefin Sans', sans-serif; src: url('https://fonts.googleapis.com/css?family=Josefin+Sans:700italic'); }
+.fontJosefinSans { font-family: 'Josefin Sans', sans-serif; }
+
+
+body, html { height:100%; min-height:100%;}
+body { min-height: 100%; height: 100%; font-family: Lato-Medium; }
+
+.temp_border {border:solid 1px black;} 
+
 .footer { bottom:0px; width:100%; position:relative; }
+
 datalist ItemTemplate{ height:20px; width:20px; }
-.marginTop33 {margin-top:33%;}
+
 .round_border { border-radius:15%;}
-.opacity5 {opacity:.5;}
 .border_rounded { border-radius:50%;}
+
 .colorWhiteFront { color:white;}
+
 .colorRedBackground { background:#F16745; }
 .colorRedFront { color:#F16745; }
+
 .colorYellowBackground { background:#FC65D5; }
 .colorYellowFront { color:#FFC65D; }
+
 .colorGreenBackground { background:#7BC8A4; }
 .colorGreenFront { color:#7BC8A4; }
+
 .colorBlueBackground { background:#4CC3D9; }
 .colorBlueFront { color:#4CC3D9; }
+
 .colorPurpleBackground { background:#93648D; }
 .colorPurpleFront { color:#93648D; }
+
 .colorBlackBackground { background:#404040; }
 .colorBlackFront { color:#404040; }
 .colorPitchBlackBG { background-color:#000000; }
+
 .colorBlueMaterialBG {background-color:rgb(33, 150, 200);}
+.colorBlueMaterialFG {color:rgb(33, 150, 200);}
+
 .colorRedMaterialBG {background-color:#ff5252;}
+.colorRedMaterialFG {color:#ff5252;}
+
 .colorGreenMaterialBG {background-color:rgb(76, 175, 80);}
+.colorGreenMaterialFG {color:rgb(76, 175, 80);}
+
 .colorDarkGreenMaterialBG { background-color:#00897b; }
+
 .colorGreyMaterialFG {color:#e0e0e0;}
+.colorGreyMaterialBG {background-color:#e0e0e0;}
 
 .colorBlackMaterialBG {background-color:#9e9e9e;}
-
 .colorBluishMaterialBG { background-color:#607d8b; }
+
+.colorBrownBG{background-color:#3A2313;}
+.colorBrownFG{color:#3A2313;}
+
 .fontSize100 { font-size:100%;}
 .fontSize50 { font-size:50%;}
 .fontSize1em { font-size:1em;}
@@ -57,15 +87,49 @@ datalist ItemTemplate{ height:20px; width:20px; }
 .marginTop2 { margin-top:2%;}
 .margin3 { margin-top:3%;}
 .margin4 { margin-top:4%;}
+.margin5 { margin-top:5%;}
+.marginTop33 {margin-top:33%;}
 
 .margin5 { margin-top:5%;}
 .margin-5 { margin-top:-5%;}
 .margin10 { margin-top:10%;}
 
+.margin_2 { margin:2%;}
 .padding1 { padding:1%; }
 .padding2 { padding:2%; }
+.padding3 { padding:3%; }
 .padding5 { padding:5%; }
 .padding10 { padding:10%; }
 
 .height100 { height:100%; min-height:100%;}
 .center_element { display:flex;justify-content:center;align-items:center; }
+
+a {text-decoration:none;}
+.footer a {text-decoration:none;color:white;}
+
+@keyframes example {
+    0%   {margin-top: -2%;}
+    50%  {margin-top: -5%;}
+    100% {margin-top: -2%;}
+}
+.continous_bounce{
+    display: inline-block;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.circle_text {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    background: #000;
+   
+}
+
+.primary_text { background-color:#EEEEEE; color:#000000;opacity:.87;}
+.secondary_text {  background-color:#EEEEEE;color:#000000;opacity:.54;}
+.hint_text {  background-color:#EEEEEE;color:#000000;opacity:.38;}

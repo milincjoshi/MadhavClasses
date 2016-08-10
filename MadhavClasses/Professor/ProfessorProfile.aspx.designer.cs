@@ -49,6 +49,15 @@ namespace MadhavClasses.Professor {
         protected global::System.Web.UI.WebControls.Label professor_email;
         
         /// <summary>
+        /// professor_username control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label professor_username;
+        
+        /// <summary>
         /// professor_phoneno control.
         /// </summary>
         /// <remarks>

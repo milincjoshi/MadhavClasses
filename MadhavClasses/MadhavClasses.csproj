@@ -42,6 +42,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=16.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.0.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="bouncy_castle_hmac_sha_pcl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle-PCL.1.0.0.6\lib\bouncy_castle_hmac_sha_pcl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -71,7 +79,34 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -92,12 +127,25 @@
   <ItemGroup>
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\AdminLogin.aspx" />
-    <Content Include="Admin\Gallery.aspx" />
+    <Content Include="Admin\AdminImages.aspx" />
+    <Content Include="Admin\AdminVideos.aspx" />
     <Content Include="Admin\Logout.aspx" />
-    <Content Include="Admin\VideoGallery.aspx" />
+    <Content Include="CSS\animate.css" />
+    <Content Include="Images\404.gif" />
+    <Content Include="Images\about.jpg" />
+    <Content Include="Images\madhav.png" />
+    <Content Include="Images\messenger_code.png" />
+    <Content Include="js\mainjs.js" />
     <Content Include="Default.aspx" />
     <Content Include="Error404.aspx" />
+    <Content Include="Images\bg.jpg" />
     <Content Include="Images\giphy.gif" />
+    <Content Include="js\jquery-3.1.0.js" />
+    <Content Include="photo_gallery.html" />
+    <Content Include="Professor\MakeTest.aspx" />
+    <Content Include="Professor\ProfessorAddDocuments.aspx" />
+    <Content Include="Professor\ProfessorEditProfile.aspx" />
+    <Content Include="Professor\ProfessorRegister.aspx" />
     <Content Include="profile_pics\person-icon.png" />
     <Content Include="index.aspx" />
     <Content Include="packages.config" />
@@ -111,6 +159,7 @@
     <Content Include="Professor\ProfessorMaster.Master" />
     <Content Include="SocialFeeds.aspx" />
     <Content Include="Student\StudentEditProfile.aspx" />
+    <Content Include="Student\StudentExploreDocuments.aspx" />
     <Content Include="Student\StudentHome.aspx" />
     <Content Include="Student\StudentLogin.aspx" />
     <Content Include="Student\StudentMaster.Master" />
@@ -168,12 +217,19 @@
     <Compile Include="Admin\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Gallery.aspx.cs">
-      <DependentUpon>Gallery.aspx</DependentUpon>
+    <Compile Include="Admin\AdminImages.aspx.cs">
+      <DependentUpon>AdminImages.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Gallery.aspx.designer.cs">
-      <DependentUpon>Gallery.aspx</DependentUpon>
+    <Compile Include="Admin\AdminImages.aspx.designer.cs">
+      <DependentUpon>AdminImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminVideos.aspx.cs">
+      <DependentUpon>AdminVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminVideos.aspx.designer.cs">
+      <DependentUpon>AdminVideos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
@@ -181,13 +237,6 @@
     </Compile>
     <Compile Include="Admin\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\VideoGallery.aspx.cs">
-      <DependentUpon>VideoGallery.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\VideoGallery.aspx.designer.cs">
-      <DependentUpon>VideoGallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -239,6 +288,27 @@
     <Compile Include="Guest.Master.designer.cs">
       <DependentUpon>Guest.Master</DependentUpon>
     </Compile>
+    <Compile Include="Professor\MakeTest.aspx.cs">
+      <DependentUpon>MakeTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\MakeTest.aspx.designer.cs">
+      <DependentUpon>MakeTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\ProfessorAddDocuments.aspx.cs">
+      <DependentUpon>ProfessorAddDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfessorAddDocuments.aspx.designer.cs">
+      <DependentUpon>ProfessorAddDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\ProfessorEditProfile.aspx.cs">
+      <DependentUpon>ProfessorEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfessorEditProfile.aspx.designer.cs">
+      <DependentUpon>ProfessorEditProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Professor\ProfessorHome.aspx.cs">
       <DependentUpon>ProfessorHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,6 +337,13 @@
     <Compile Include="Professor\ProfessorProfile.aspx.designer.cs">
       <DependentUpon>ProfessorProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Professor\ProfessorRegister.aspx.cs">
+      <DependentUpon>ProfessorRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfessorRegister.aspx.designer.cs">
+      <DependentUpon>ProfessorRegister.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocialFeeds.aspx.cs">
       <DependentUpon>SocialFeeds.aspx</DependentUpon>
@@ -281,6 +358,13 @@
     </Compile>
     <Compile Include="Student\StudentEditProfile.aspx.designer.cs">
       <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentExploreDocuments.aspx.cs">
+      <DependentUpon>StudentExploreDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentExploreDocuments.aspx.designer.cs">
+      <DependentUpon>StudentExploreDocuments.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student\StudentHome.aspx.cs">
       <DependentUpon>StudentHome.aspx</DependentUpon>
@@ -317,11 +401,19 @@
     <Compile Include="Student\StudentRegister.aspx.designer.cs">
       <DependentUpon>StudentRegister.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Youtubescript.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="docs\" />
+    <Folder Include="font-awesome\" />
+    <Folder Include="fonts\earth_orbiter\" />
     <Folder Include="fonts\font-awesome-4.6.3\" />
     <Folder Include="fonts\Lato2OFL\" />
+    <Folder Include="fonts\quicksand\" />
     <Folder Include="fonts\roboto\" />
+    <Folder Include="Images\fulls\" />
+    <Folder Include="Images\thumbs\" />
     <Folder Include="Image_Gallery\" />
   </ItemGroup>
   <PropertyGroup>
@@ -354,6 +446,11 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

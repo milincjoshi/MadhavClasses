@@ -1,10 +1,49 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="Guest.Master" AutoEventWireup="true" CodeBehind="Gallery.aspx.cs" Inherits="MadhavClasses.Gallery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <!--Photo Gallery CSS-->
+    	<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="page-header text-center">
-        <h3>Wall of Fame</h3>
-    </div>
+    <!--New Gallery-->
+    	<div id="wrapper">
+			<div id="main">
+				<div id="reel">
+					<!-- Header Item -->
+					<!-- Thumb Items -->
+
+                     <asp:ListView ID="ListView1" runat="server">
+                        <ItemTemplate>
+                           <article class="item thumb" data-width="282">
+							    <h2><%# Eval("image_title") %></h2>
+							    <a href="<%# Eval("image_path") %>" class="image">
+                                    <img src="<%# Eval("image_path") %>" alt="">
+							    </a>
+						    </article>
+                        </ItemTemplate>
+                    </asp:ListView>
+						
+					<!--
+                        <article class="item thumb" data-width="282"><h2>Elysium</h2><a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""></a></article>
+                    -->
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+    <!--End New Gallery-->
     <!--
     <asp:DataList id="image_list" runat="server" RepeatDirection="Horizontal" RepeatColumns="6"> 
         <ItemTemplate> 
@@ -15,6 +54,7 @@
         </ItemTemplate> 
     </asp:DataList> 
     -->
+    <!--
     <asp:ListView ID="image_listView" runat="server">
         <ItemTemplate>
             <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6"> 
@@ -23,6 +63,7 @@
             </div> 
         </ItemTemplate>
     </asp:ListView>
+    -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

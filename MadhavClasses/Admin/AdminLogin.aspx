@@ -20,32 +20,41 @@
 
     <!--MainCSS Link-->
     <link href="../CSS/mainCSS.css" rel="stylesheet" />
-  
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css" />
     
 </head>
-<body class="container">
+<body class="container colorGreyMaterialBG">
     <div class="page-header">
         <h3>Welcome Admin</h3>
     </div>
     <form id="form1" runat="server">
     <div class="row">
-        <div class="col-lg-4 col-lg-offset-4">
+        <div class="col-lg-6 col-lg-offset-3">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     Login
                 </div>
                 <div class="panel-body">
                     <div class="col-lg-12 marginTop2">
-                        <asp:TextBox ID="email" runat="server" TextMode="Email" CssClass="form-control" placeholder="Email" required />
+                        <div class="col-lg-1 fontSizeOneHalfem">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-10">
+                            <asp:TextBox ID="email" runat="server" TextMode="Email" CssClass="form-control" placeholder=" Email" required />
+                        </div>
                     </div>
                     <div class="col-lg-12 marginTop2">
-                        <asp:TextBox ID="password" runat="server" TextMode="Password" CssClass="form-control" placeholder="Password" required />
+                        <div class="col-lg-1 fontSizeOneHalfem">
+                            <i class="fa fa-key" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-10">
+                            <asp:TextBox ID="password" runat="server" TextMode="Password" CssClass="form-control" placeholder="Password" required />
+                        </div>
+                    <div class="col-lg-12 marginTop2">  
+                        <asp:Button ID="login" runat="server" Text="Login" CssClass="btn pull-right" OnClick="login_Click" />
                     </div>
                     <div class="col-lg-12 marginTop2">  
-                        <asp:Button ID="login" runat="server" Text="Login" CssClass="btn" OnClick="login_Click" />
-                    </div>
-                    <div class="col-lg-12 marginTop2">  
-                        <a href="#" class="pull-right" >Forgot Password?</a>
+                        <a href="#" >Forgot Password?</a>
                     </div>
                    
                 </div>

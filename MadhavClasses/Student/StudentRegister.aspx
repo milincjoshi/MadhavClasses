@@ -24,7 +24,7 @@
     <link href="../fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 
 </head>
-<body class="container-fluid">
+<body class="container">
     <div class="page-header">
         <h3>Student Registration</h3>
     </div>
@@ -32,7 +32,7 @@
     <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
 
-        <div class="panel panel-default">
+        <div class="panel panel-primary">
             <div class="panel-heading">Register</div>
             <div class="panel-body">
                 <asp:TextBox ID="student_email" runat="server" TextMode="Email" CssClass="form-control marginTop2" placeholder="Email" required/>

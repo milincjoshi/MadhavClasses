@@ -20,29 +20,50 @@
 
     <!--MainCSS Link-->
     <link href="../CSS/mainCSS.css" rel="stylesheet" /></head>
-<body class="container-fluid">
+
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css" />
+
+<body class="container colorGreyMaterialBG">
     <div class="page-header">
         <h3>Student Login</h3>
     </div>
-    <form id="form1" runat="server">
+ <form id="form2" runat="server">
     <div class="row">
-        <div class="col-lg-4 col-lg-offset-4">
-
-        <div class="panel panel-primary">
-            <div class="panel-heading">Login</div>
-            <div class="panel-body">
-                <asp:TextBox ID="student_email" runat="server" TextMode="Email" CssClass="form-control marginTop2" placeholder="Email" required/>
-                <asp:TextBox ID="student_password" runat="server" TextMode="Password" CssClass="form-control marginTop2" placeholder="Password" required/>
-                <asp:Button ID="register" runat="server" CssClass="btn btn-default marginTop2" Text="Login" OnClick="register_Click" />
-                <asp:Label ID="invalid" runat="server" Text="Invalid Email/Password" CssClass="label label-danger" Visible="false" />
-                <div class="col-lg-12">
-                    <a class="pull-right" href="StudentRegister.aspx">Register</a>
+     
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Login
                 </div>
-
+                <div class="panel-body">
+                    <div class="col-lg-12 marginTop2">
+                        <div class="col-lg-1 fontSizeOneHalfem">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-10">
+                               <asp:TextBox ID="student_email" runat="server" TextMode="Email" CssClass="form-control marginTop2" placeholder="Email" required/>
+                         </div>
+                    </div>
+                    <div class="col-lg-12 marginTop2">
+                        <div class="col-lg-1 fontSizeOneHalfem">
+                            <i class="fa fa-key" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-10">
+                         <asp:TextBox ID="student_password" runat="server" TextMode="Password" CssClass="form-control marginTop2" placeholder="Password" required/>
+                       </div>
+                    </div>
+                    <div class="col-lg-12 marginTop2">  
+                         <asp:Button ID="register" runat="server" CssClass="btn marginTop2 pull-right" Text="Login" OnClick="login_Click" />
+                   </div>
+                    <div class="col-lg-12 marginTop2">  
+                        <a href="#" >Forgot Password?</a>
+                    </div>
+                   
+                </div>
             </div>
-        </div>
-        </div>
 
+        </div>
+    
     </div>
     </form>
 </body>

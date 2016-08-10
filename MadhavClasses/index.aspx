@@ -1,59 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Guest.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="MadhavClasses.index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css" />
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function () {
-            $("#language_text").addClass("animated bounceInRight");
-            $("#welcome_image").addClass("animated bounceInLeft");
-        });
-        $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            }
-          });
-        });
-    </script>
-  <style>
-    @keyframes example {
-        0%   {margin-top: -2%;}
-        50%  {margin-top: -5%;}
-        100% {margin-top: -2%;}
-    }
-    .continous_bounce{
-        display: inline-block;
-        animation-name: example;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-    }
+    <style>
 
-  </style>
-   
+
+    </style>
 </asp:Content>
 <asp:Content CssClass="height100 margin-5" ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
-    <section style="background-color:#757575 !important; color:white; margin-top:-5% !important;"  class="height100">
+   
+     <section style="margin-top:-5% !important;"  class="height100 colorGreyMaterialBG">
         <div class="col-lg-12 height100 center_element">
+            
             <div id="welcome_image" class="col-lg-8">
                 <img height="300" width="300" src="Images/namaste.jpg" class="img-circle col-lg-offset-2" />
             </div>
             <div id="language_text" class="col-lg-4 fontSize4em">
-                <span class="col-lg-12">संस्कृतम्</span>
-                <span class="col-lg-12">हिंदी</span>
-                <span class="col-lg-12">ગુજરાતી</span>
-                <span class="col-lg-12">English</span>
+                <span class="col-lg-12 ">संस्कृतम्</span>
+                <span class="col-lg-12 ">हिंदी</span>
+                <span class="col-lg-12 ">ગુજરાતી</span>
+                <span class="col-lg-12 ">English</span>
             </div>
         </div>
         <div style="margin-top:-2%;" class="col-lg-12 fontSize2em continous_bounce">
-            <a href="#icon_text1" style="text-decoration:none;color:white;">
+            <a href="#icon_text1" style="text-decoration:none;color:black;">
                 <span class="glyphicon glyphicon-menu-down text-center center-block"></span>
             </a>
         </div>
@@ -92,16 +60,71 @@
 
      <!--Founder-->
      <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin5">
-        <p class="col-lg-9 col-md-9 col-sm-12 col-xs-12 padding5 fontSizeOneHalfem">
-             Founded by
-            <span class="fontRoboto"><strong><i><a target="_blank" href="https://www.facebook.com/mahendra.joshi.9022">Mahendra Joshi</a></i></strong></span>
-            , its been almost 11 years at Silver Point, Bhatar Road, Surat since Madhav Classes has started its journey.
-            Since then, Mahendra Joshi has never looked back. Teaching Languages mainly Sanskrit, Hindi, Gujarati to kids for Grade 8 to 12,
-            Madhav Classes has proved that it excels at every point. Students who have been a part of Madhav Classes has made history in Board Results, placing themselves
-            in the top tier every time. Madhav Classes has constantly expanded its reach in Surat.
-        </p>
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 padding5 fontSizeOneHalfem">
+            <div class="col-lg-12" id="description">
+                Founded by Mahendra Joshi, its been almost 11 years at Silver Point, Bhatar Road, Surat since Madhav Classes has started its journey.
+                Since then, Mahendra Joshi has never looked back. Teaching Languages mainly Sanskrit, Hindi, Gujarati to kids for Grade 8 to 12,
+                Madhav Classes has proved that it excels at every point. Students who have been a part of Madhav Classes has made history in Board Results, placing themselves
+                in the top tier every time. Madhav Classes has constantly expanded its reach in Surat. 
+            </div> 
+        </div>
         <img class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center center-block img-responsize border img-circle" src="images/MahendraJoshi.jpg" />
       </section>
       <!--End Founder-->
     
+
+    <!--footer-->
+    <footer class="footer fontSizeOneHalfem img-rounded col-lg-12 margin5 colorBlackBackground colorWhiteFront padding5" style="">
+        <div class="col-lg-4 pull-left" >
+            © 2016 All Copyrights Reserved.
+            <br />
+              Developed by <span><a href="https://www.linkedin.com/in/milincjoshi">Milin Joshi</a></span>
+        </div>
+        <nav class="col-lg-3 col-lg-offset-2">
+            <a class="col-lg-12" href="#">Mobile</a>
+            <a class="col-lg-12"  href="#">About</a>
+            <a class="col-lg-12"  href="#">Video Lectures</a>
+            <a class="col-lg-12"  href="#">Send Feedback</a>
+            <a class="col-lg-12"  href="#">Help</a>
+        </nav>
+            <div class="col-lg-3 pull-right">
+                <a class="col-lg-12" href="https://www.facebook.com/groups/madhavclasses/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+                <a class="col-lg-12" href="https://www.instagram.com/madhav_classes/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                </a>
+                <a class="col-lg-12" href="https://twitter.com/madhav_classes" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span>Twitter</span>
+                </a>
+                <a class="col-lg-12" href="#">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <span>Google+</span>
+                </a>
+                <a  class="col-lg-12" href="#">
+                    <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                    <span>Snapchat</span>
+                </a>
+            </div>
+        
+      </footer>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </asp:Content>

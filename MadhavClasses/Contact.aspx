@@ -2,12 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       
-
-    <!--fb-->
-
-    <!--End fb-->
-    
+      
     <header class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
       <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
         <div class="fontJosefin fontSize3em  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">Contact us</div>
@@ -17,29 +12,7 @@
 
     <section>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 border margin2">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 border">
-                  <!--Facebook-->
-                  <!--Facebook -->
-                      <div id="fb-root"></div>
-                      <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-                        fjs.parentNode.insertBefore(js, fjs);
-                      }(document, 'script', 'facebook-jssdk'));</script>
-                  <!--End Facebook-->
-
-                      <div class="fb-page" data-href="https://www.facebook.com/ClassesMadhav/" data-tabs="timeline" data-width="500" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        <div class="fb-xfbml-parse-ignore">
-                          <blockquote cite="https://www.facebook.com/ClassesMadhav/">
-                            <a href="https://www.facebook.com/ClassesMadhav/">Madhav Classes</a>
-                          </blockquote>
-                        </div>
-                      </div>
-                  <!--End Facebook-->
-              </div><!--End Social Networks-->
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3">
                   <div class="panel panel-primary">
                       <div class="panel-heading">Leave us a Message</div>
                       <div class="panel-body">

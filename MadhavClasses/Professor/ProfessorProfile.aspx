@@ -33,6 +33,17 @@
             </div>
             <!--End email-->
             <hr />
+            <!--Email-->
+            <div class="row margin2">
+                <div class="col-lg-12">
+                    <span class="col-lg-1 glyphicon glyphicon-user"></span>
+                    <div class="col-lg-11">
+                        <asp:Label ID="professor_username" runat="server" Text="Email" />
+                    </div>
+                </div>
+            </div>
+            <!--End email-->
+            <hr />
             <!--Phone no-->
             <div class="row margin2">
                 <div class="col-lg-12">
