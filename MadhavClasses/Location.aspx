@@ -2,10 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        
-    <header class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 border">
+   <header class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 border materialGreenWhite">
       <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-        <div class="fontJosefin fontSize3em  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">Locations</div>
+        <div class="fontJosefin fontSize3em  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">Location</div>
       </div>
     </header>
 
@@ -46,7 +45,7 @@
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
     <!--End Map Script-->
-    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin5">
       <div class="col-lg-offset-2 col-lg-3 col-md-offset-2 col-md-3 col-sm-12 col-xs-12">
           <div id="googleMap1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:350px;height:250px;"></div>
           <p class="fontSizeOneHalfem col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -61,5 +60,7 @@
 
       </div>
     </section>
+    
 
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCN2fJ5jIB8iyPqbjIAeUubLIbS7SzTpUg"></script>
 </asp:Content>

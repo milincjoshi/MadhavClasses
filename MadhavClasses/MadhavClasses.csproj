@@ -133,8 +133,18 @@
     <Content Include="CSS\animate.css" />
     <Content Include="Images\404.gif" />
     <Content Include="Images\about.jpg" />
+    <Content Include="Images\educate.png" />
+    <Content Include="Images\hello.jpeg" />
+    <Content Include="Images\homepage.jpg" />
+    <Content Include="Images\homepage2.jpg" />
     <Content Include="Images\madhav.png" />
+    <Content Include="Images\map-marker.png" />
+    <Content Include="Images\map-marker_b.png" />
+    <Content Include="Images\meditate.jpg" />
     <Content Include="Images\messenger_code.png" />
+    <Content Include="Images\tie.png" />
+    <Content Include="Images\tie_24.png" />
+    <Content Include="Images\tie_242.png" />
     <Content Include="js\mainjs.js" />
     <Content Include="Default.aspx" />
     <Content Include="Error404.aspx" />
@@ -163,6 +173,8 @@
     <Content Include="Student\StudentHome.aspx" />
     <Content Include="Student\StudentLogin.aspx" />
     <Content Include="Student\StudentMaster.Master" />
+    <Content Include="fonts\geonms-webfont.ttf" />
+    <Content Include="fonts\SqueakyChalkSound.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -404,13 +416,13 @@
     <Compile Include="Admin\Youtubescript.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\" />
     <Folder Include="docs\" />
     <Folder Include="font-awesome\" />
     <Folder Include="fonts\earth_orbiter\" />
     <Folder Include="fonts\font-awesome-4.6.3\" />
     <Folder Include="fonts\Lato2OFL\" />
     <Folder Include="fonts\quicksand\" />
+    <Folder Include="fonts\RobotoTTF\" />
     <Folder Include="fonts\roboto\" />
     <Folder Include="Images\fulls\" />
     <Folder Include="Images\thumbs\" />

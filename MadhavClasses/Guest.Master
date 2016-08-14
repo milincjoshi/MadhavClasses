@@ -9,8 +9,13 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--Material Design Links-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-red.min.css" />
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
@@ -26,47 +31,116 @@
     <!--font awesome links-->
     <link rel="stylesheet" href="/font-awesome/css/font-awesome.css" />
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-    <style>
-        .fontJosefinSans { font-family: 'Josefin Sans', sans-serif; }
-    </style>
+
     <!--Jquery-->
     <script src="js/jquery-3.1.0.js" type="text/javascript"></script>   
     <link rel="stylesheet" href="CSS/animate.css" />
-    <script src="js/mainjs.js"></script>   
+    <script src="js/mainjs.js"></script>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body class="container-fluid">     
    
-    
-      <!--New navbar-->
-      <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Madhav Classes</a>
+
+    <!--Header-->
+    <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header" style="background-color:rgb(244,67,54);">
+            <div class="mdl-layout__header-row">
+              <!-- Title -->
+              <span class="mdl-layout-title">Madhav Classes</span>
+              <!-- Add spacer, to align navigation to the right -->
+              <div class="mdl-layout-spacer"></div>
+              <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link"  href="index.aspx">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="mdl-navigation__link"  href="Gallery.aspx">
+                <i class="material-icons">image</i>
+                 Gallery
+            </a>
+            <a class="mdl-navigation__link"  href="AboutUs.aspx">   
+                <i class="material-icons">info</i>
+                About
+            </a>
+            <a class="mdl-navigation__link"  href="Contact.aspx">
+               <i class="material-icons">contacts</i>
+                Contact
+            </a>
+            <a class="mdl-navigation__link"  href="Location.aspx">
+               <i class="material-icons">location_on</i>
+                Location
+            </a>
+            <a class="mdl-navigation__link"  href="SocialFeeds.aspx">
+                <i class="material-icons">rss_feed</i>
+                Social Feeds
+            </a>
+            <a class="mdl-navigation__link"  href="Admin/AdminLogin.aspx">
+                <i class="material-icons">settings</i>
+                 Admin
+            </a>
+            <a class="mdl-navigation__link"  href="Professor/ProfessorLogin.aspx">
+                <img src="Images/tie_24.png" />
+                Professor
+             </a>
+            <a class="mdl-navigation__link"  href="Student/StudentLogin.aspx">
+                <i class="material-icons">face</i>
+                Student
+            </a>
+        
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Madhav Classes</span>
+            <nav class="mdl-navigation">
+             <a class="mdl-navigation__link"  href="index.aspx">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="mdl-navigation__link"  href="Gallery.aspx">
+                <i class="material-icons">image</i>
+                 Gallery
+            </a>
+            <a class="mdl-navigation__link"  href="AboutUs.aspx">   
+                <i class="material-icons">info</i>
+                About
+            </a>
+            <a class="mdl-navigation__link"  href="Contact.aspx">
+               <i class="material-icons">contacts</i>
+                Contact
+            </a>
+            <a class="mdl-navigation__link"  href="Location.aspx">
+               <i class="material-icons">location_on</i>
+                Location
+            </a>
+            <a class="mdl-navigation__link"  href="SocialFeeds.aspx">
+                <i class="material-icons">rss_feed</i>
+                Social Feeds
+            </a>
+            <a class="mdl-navigation__link"  href="Admin/AdminLogin.aspx">
+                <i class="material-icons">settings</i>
+                 Admin
+            </a>
+            <a class="mdl-navigation__link"  href="Professor/ProfessorLogin.aspx">
+                <img src="Images/tie_242.png" />
+                Professor
+             </a>
+            <a class="mdl-navigation__link"  href="Student/StudentLogin.aspx">
+                <i class="material-icons">face</i>
+                Student
+            </a>
+        
+            </nav>
+          </div>
+          <main class="mdl-layout__content">
+            <div class="page-content"><!-- Your content goes here --></div>
+          </main>
         </div>
-        <div id="navbar" class="navbar-collapse collapse" >
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.aspx">Home</a></li>
-            <li><a href="Gallery.aspx">Gallery</a></li>
-            <li><a href="AboutUs.aspx">About</a></li>
-            <li><a href="Contact.aspx">Contact</a></li>
-            <li><a href="Location.aspx">Location</a></li>
-            <li><a href="SocialFeeds.aspx">Social Feeds</a></li>
-            <li><a href="Admin/AdminLogin.aspx">Admin</a></li>
-            <li><a href="Professor/ProfessorLogin.aspx">Professor</a></li>
-            <li><a href="Student/StudentLogin.aspx">Student</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    <!--End New navbar-->  
+    <!--End Header-->
     <div class="margin5 height100">
         <form  class="height100" id="form1" runat="server">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -74,6 +148,58 @@
             </asp:ContentPlaceHolder>
         </form>
    </div>
-    
+       <!--footer-->
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">
+      More Information
+    </div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy and Terms</a></li>
+      <li><a href="#">User Agreement</a></li>
+    </ul>
+  </div>
+  <div class="mdl-mini-footer__right-section text-primary">
+    <a class="col-lg-12" href="https://www.facebook.com/groups/madhavclasses/">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <span>Facebook</span>
+    </a>
+    <a class="col-lg-12" href="https://www.instagram.com/madhav_classes/" target="_blank">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <span>Instagram</span>
+    </a>
+    <a class="col-lg-12" href="https://twitter.com/madhav_classes" target="_blank">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <span>Twitter</span>
+    </a>
+    <a class="col-lg-12" href="#">
+        <i class="fa fa-google-plus" aria-hidden="true"></i>
+        <span>Google+</span>
+    </a>
+    <a  class="col-lg-12" href="#">
+        <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+        <span>Snapchat</span>
+    </a>
+  </div>
+</footer> 
+    <script>
+
+ $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+    </script>
+
 </body>
 </html>
